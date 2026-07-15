@@ -18,8 +18,16 @@ It maps the full BDC catalog as a **Process → Product → CDS Entity** ontolog
 
 ## Pages
 
+**Explore**
 - **Portfolio Overview** — KPIs, six-criteria completeness gauge, value-chain summary,
   entity semantic-role distribution, and source-system / provenance lenses.
+- **Data Product Explorer** — deep dive into a single data product: metadata, description,
+  CDS views/entities (expandable to field level), Snowflake semantic model, and business objects.
+- **CDS Entity Browser** — cross-product search over all ~2,028 CDS entities with field
+  definitions, key/PII flags, and associations.
+- **Data Product Tree** — collapsible Business Area → Product → Entity → Column hierarchy.
+
+**Ontology**
 - **Ontology Graph** — interactive Process → Product graph (Cytoscape fcose). Filter by
   value chain, line of business, industry, source system, and provenance; toggle ODM
   master-data links; expand any product into its CDS entities (colored by semantic role).
@@ -38,8 +46,10 @@ server required, which is what makes it deployable to GitHub Pages.
 ```
 sap-bdc-data-products/
 ├── client/                     # Vite + React + TS app
-│   ├── public/bdc_ontology.json   # precomputed catalog (static asset)
-│   └── src/lib/{api,ontology}.ts  # in-browser data layer
+│   ├── public/
+│   │   ├── bdc_ontology.json   # precomputed ontology (Ontology pages)
+│   │   └── explore.json        # per-product CDS/semantic detail (Explore pages)
+│   └── src/lib/{api,ontology,explore}.ts  # in-browser data layer
 ├── data/bdc_ontology.json      # canonical copy of the mined catalog
 └── .github/workflows/deploy.yml   # build + deploy to GitHub Pages
 ```

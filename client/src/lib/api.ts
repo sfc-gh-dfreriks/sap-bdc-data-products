@@ -10,6 +10,7 @@ import {
   buildGraph, shapeMeta, shapeProducts, shapeCorrelation,
   shapeScorecard, shapeCoverage, shapeSemanticRoles,
 } from "./ontology";
+import { type ExploreData, loadExplore } from "./explore";
 
 export type { GraphOpts };
 
@@ -55,4 +56,5 @@ export const api = {
   insightApps: async (): Promise<any[]> => (await loadOntology()).insight_apps,
   semanticRoles: async (): Promise<any> => shapeSemanticRoles(await loadOntology()),
   lenses: async (): Promise<any> => (await loadOntology()).lens_summary,
+  explore: async (): Promise<ExploreData> => loadExplore(),
 };

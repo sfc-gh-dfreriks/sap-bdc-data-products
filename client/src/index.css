@@ -4,3 +4,17 @@
 
 html, body, #root { height: 100%; }
 body { margin: 0; background: #f1f5f9; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+
+/* Hide default disclosure triangles; we render our own chevrons/indentation. */
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+details > summary::before {
+  content: "▶";
+  display: inline-block;
+  width: 12px;
+  flex-shrink: 0;
+  font-size: 9px;
+  color: #9ca3af;
+  transition: transform .15s ease;
+}
+details[open] > summary::before { transform: rotate(90deg); }

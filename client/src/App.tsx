@@ -3,6 +3,9 @@ import { Sidebar, type PageId } from "./components/Sidebar";
 import { useQuery } from "./hooks/useQuery";
 import { api } from "./lib/api";
 import Overview from "./pages/Overview";
+import Explorer from "./pages/Explorer";
+import Entities from "./pages/Entities";
+import Tree from "./pages/Tree";
 import Graph from "./pages/Graph";
 import Processes from "./pages/Processes";
 import UseCases from "./pages/UseCases";
@@ -11,6 +14,9 @@ import Coverage from "./pages/Coverage";
 
 const TITLES: Record<PageId, string> = {
   overview: "Portfolio Overview",
+  explorer: "Data Product Explorer",
+  entities: "CDS Entity Browser",
+  tree: "Data Product Tree",
   graph: "Ontology Graph",
   processes: "Business-Process Ontology",
   usecases: "Use Cases / Intelligent Applications",
@@ -25,6 +31,9 @@ export default function App() {
   const render = () => {
     switch (page) {
       case "overview": return <Overview />;
+      case "explorer": return <Explorer />;
+      case "entities": return <Entities />;
+      case "tree": return <Tree />;
       case "graph": return <Graph />;
       case "processes": return <Processes />;
       case "usecases": return <UseCases />;
