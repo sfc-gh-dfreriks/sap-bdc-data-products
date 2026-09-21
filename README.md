@@ -13,7 +13,7 @@ It maps the full BDC catalog as a **Process → Product → CDS Entity** ontolog
 | Data products | **334** |
 | CDS entities | **2,361** |
 | Typed associations | **2,576** |
-| Cross-product ODM links | **425** |
+| Cross-product ODM links | **426** |
 | SAP value-chain processes | **10** |
 
 ## Pages
