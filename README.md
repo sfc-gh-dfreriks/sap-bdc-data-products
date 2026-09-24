@@ -4,7 +4,7 @@ An interactive visualization of the **SAP Business Data Cloud (BDC)** data produ
 portfolio and its underlying ontology, mined from the public
 [SAP Business Accelerator Hub](https://api.sap.com/dataproducts) catalog.
 
-> **Live site:** https://dfreriks-snow.github.io/sap-bdc-data-products/
+> **Live site:** https://sfc-gh-dfreriks.github.io/sap-bdc-data-products/
 
 It maps the full BDC catalog as a **Process → Product → CDS Entity** ontology:
 
