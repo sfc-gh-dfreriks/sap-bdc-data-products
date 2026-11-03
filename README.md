@@ -10,10 +10,10 @@ It maps the full BDC catalog as a **Process → Product → CDS Entity** ontolog
 
 | Metric | Count |
 |---|---:|
-| Data products | **312** |
-| CDS entities | **2,028** |
-| Typed associations | **2,220** |
-| Cross-product ODM links | **384** |
+| Data products | **334** |
+| CDS entities | **2,361** |
+| Typed associations | **2,576** |
+| Cross-product ODM links | **426** |
 | SAP value-chain processes | **10** |
 
 ## Pages
@@ -23,7 +23,7 @@ It maps the full BDC catalog as a **Process → Product → CDS Entity** ontolog
   entity semantic-role distribution, and source-system / provenance lenses.
 - **Data Product Explorer** — deep dive into a single data product: metadata, description,
   CDS views/entities (expandable to field level), Snowflake semantic model, and business objects.
-- **CDS Entity Browser** — cross-product search over all ~2,028 CDS entities with field
+- **CDS Entity Browser** — cross-product search over all ~2,361 CDS entities with field
   definitions, key/PII flags, and associations.
 - **Data Product Tree** — collapsible Business Area → Product → Entity → Column hierarchy.
 
